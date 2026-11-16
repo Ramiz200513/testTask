@@ -1,0 +1,318 @@
+{
+  "report_date": "2026-11-10",
+  "allocation": "fifo",
+  "contracts": [
+    {
+      "contract_id": "D-1",
+      "contractor": "Студия «Свет»",
+      "signed_at": "2026-08-25",
+      "amount": "600000.00",
+      "works": [
+        {
+          "work_id": "W-11",
+          "title": "Съёмка: весенняя коллекция",
+          "state": "accepted",
+          "state_date": "2026-09-20",
+          "after_report_date": null,
+          "price": "100000.00",
+          "due": "100000.00",
+          "paid": "100000.00",
+          "paid_direct": "0.00",
+          "paid_from_contract": "100000.00",
+          "remaining": "0.00"
+        },
+        {
+          "work_id": "W-12",
+          "title": "Съёмка: лето",
+          "state": "accepted",
+          "state_date": "2026-10-05",
+          "after_report_date": null,
+          "price": "100000.00",
+          "due": "100000.00",
+          "paid": "100000.00",
+          "paid_direct": "0.00",
+          "paid_from_contract": "100000.00",
+          "remaining": "0.00"
+        },
+        {
+          "work_id": "W-13",
+          "title": "Съёмка: аксессуары",
+          "state": "cancelled",
+          "state_date": "2026-10-12",
+          "after_report_date": null,
+          "price": "100000.00",
+          "due": "0.00",
+          "paid": "0.00",
+          "paid_direct": "0.00",
+          "paid_from_contract": "0.00",
+          "remaining": "0.00"
+        },
+        {
+          "work_id": "W-14",
+          "title": "Съёмка: осень",
+          "state": "accepted",
+          "state_date": "2026-10-28",
+          "after_report_date": null,
+          "price": "100000.00",
+          "due": "100000.00",
+          "paid": "100000.00",
+          "paid_direct": "15000.00",
+          "paid_from_contract": "85000.00",
+          "remaining": "0.00"
+        },
+        {
+          "work_id": "W-15",
+          "title": "Съёмка: зима",
+          "state": "open",
+          "state_date": null,
+          "after_report_date": null,
+          "price": "100000.00",
+          "due": "100000.00",
+          "paid": "7500.00",
+          "paid_direct": "0.00",
+          "paid_from_contract": "7500.00",
+          "remaining": "92500.00"
+        },
+        {
+          "work_id": "W-16",
+          "title": "Съёмка: новогодняя",
+          "state": "open",
+          "state_date": null,
+          "after_report_date": null,
+          "price": "100000.00",
+          "due": "100000.00",
+          "paid": "7500.00",
+          "paid_direct": "0.00",
+          "paid_from_contract": "7500.00",
+          "remaining": "92500.00"
+        }
+      ],
+      "totals": {
+        "works_price": "600000.00",
+        "cancelled": "100000.00",
+        "due": "500000.00",
+        "accepted": "300000.00",
+        "paid": "315000.00",
+        "remaining": "185000.00",
+        "remaining_accepted": "0.00",
+        "remaining_open": "185000.00",
+        "advance": "15000.00",
+        "overpaid": "0.00",
+        "queued": "150000.00",
+        "refunded": "50000.00"
+      },
+      "payments": [
+        {
+          "payment_id": "P-1",
+          "work_id": null,
+          "purpose": "Аванс 50%",
+          "amount": "300000.00",
+          "state": "paid",
+          "state_date": "2026-09-01",
+          "after_report_date": null,
+          "counted": "300000.00",
+          "applied": [
+            {
+              "work_id": "W-11",
+              "amount": "100000.00"
+            },
+            {
+              "work_id": "W-12",
+              "amount": "100000.00"
+            },
+            {
+              "work_id": "W-14",
+              "amount": "85000.00"
+            },
+            {
+              "work_id": "W-15",
+              "amount": "7500.00"
+            },
+            {
+              "work_id": "W-16",
+              "amount": "7500.00"
+            }
+          ]
+        },
+        {
+          "payment_id": "P-2",
+          "work_id": null,
+          "purpose": "Аванс, ошибочный платёж",
+          "amount": "50000.00",
+          "state": "refunded",
+          "state_date": "2026-09-10",
+          "after_report_date": null,
+          "counted": "0.00",
+          "applied": []
+        },
+        {
+          "payment_id": "P-3",
+          "work_id": "W-14",
+          "purpose": "Материалы для съёмки",
+          "amount": "15000.00",
+          "state": "paid",
+          "state_date": "2026-10-25",
+          "after_report_date": null,
+          "counted": "15000.00",
+          "applied": [
+            {
+              "work_id": "W-14",
+              "amount": "15000.00"
+            }
+          ]
+        },
+        {
+          "payment_id": "P-4",
+          "work_id": null,
+          "purpose": "Остаток",
+          "amount": "150000.00",
+          "state": "queued",
+          "state_date": "2026-11-01",
+          "after_report_date": null,
+          "counted": "0.00",
+          "applied": []
+        }
+      ],
+      "notes": [
+        "Отменены работы на 100 000,00: они не входят в «к оплате» и «осталось оплатить».",
+        "В очереди на оплату 150 000,00 (в «выплачено» не входит). Если оплатить, будет выплачено 465 000,00 при стоимости принятых работ 300 000,00 и всех работ в силе 500 000,00."
+      ]
+    },
+    {
+      "contract_id": "D-2",
+      "contractor": "Иван Петров, дизайнер",
+      "signed_at": "2026-09-20",
+      "amount": "90000.00",
+      "works": [
+        {
+          "work_id": "W-21",
+          "title": "Логотип",
+          "state": "accepted",
+          "state_date": "2026-10-01",
+          "after_report_date": null,
+          "price": "20000.00",
+          "due": "20000.00",
+          "paid": "20000.00",
+          "paid_direct": "0.00",
+          "paid_from_contract": "20000.00",
+          "remaining": "0.00"
+        },
+        {
+          "work_id": "W-22",
+          "title": "Фирменный стиль",
+          "state": "accepted",
+          "state_date": "2026-10-10",
+          "after_report_date": null,
+          "price": "30000.00",
+          "due": "30000.00",
+          "paid": "30000.00",
+          "paid_direct": "0.00",
+          "paid_from_contract": "30000.00",
+          "remaining": "0.00"
+        },
+        {
+          "work_id": "W-23",
+          "title": "Упаковка",
+          "state": "open",
+          "state_date": null,
+          "after_report_date": "принята 11.11.2026",
+          "price": "40000.00",
+          "due": "40000.00",
+          "paid": "25000.00",
+          "paid_direct": "0.00",
+          "paid_from_contract": "25000.00",
+          "remaining": "15000.00"
+        }
+      ],
+      "totals": {
+        "works_price": "90000.00",
+        "cancelled": "0.00",
+        "due": "90000.00",
+        "accepted": "50000.00",
+        "paid": "75000.00",
+        "remaining": "15000.00",
+        "remaining_accepted": "0.00",
+        "remaining_open": "15000.00",
+        "advance": "25000.00",
+        "overpaid": "0.00",
+        "queued": "0.00",
+        "refunded": "0.00"
+      },
+      "payments": [
+        {
+          "payment_id": "P-5",
+          "work_id": null,
+          "purpose": "Аванс 50%",
+          "amount": "45000.00",
+          "state": "paid",
+          "state_date": "2026-09-25",
+          "after_report_date": null,
+          "counted": "45000.00",
+          "applied": [
+            {
+              "work_id": "W-21",
+              "amount": "20000.00"
+            },
+            {
+              "work_id": "W-22",
+              "amount": "25000.00"
+            }
+          ]
+        },
+        {
+          "payment_id": "P-6",
+          "work_id": null,
+          "purpose": "Остаток",
+          "amount": "25000.00",
+          "state": "paid",
+          "state_date": "2026-10-30",
+          "after_report_date": null,
+          "counted": "25000.00",
+          "applied": [
+            {
+              "work_id": "W-22",
+              "amount": "5000.00"
+            },
+            {
+              "work_id": "W-23",
+              "amount": "20000.00"
+            }
+          ]
+        },
+        {
+          "payment_id": "P-7",
+          "work_id": null,
+          "purpose": "Доплата",
+          "amount": "5000.00",
+          "state": "paid",
+          "state_date": "2026-11-02",
+          "after_report_date": null,
+          "counted": "5000.00",
+          "applied": [
+            {
+              "work_id": "W-23",
+              "amount": "5000.00"
+            }
+          ]
+        },
+        {
+          "payment_id": "P-8",
+          "work_id": null,
+          "purpose": "Остаток",
+          "amount": "20000.00",
+          "state": "not_yet",
+          "state_date": null,
+          "after_report_date": "заведён 12.11.2026, оплачен 12.11.2026",
+          "counted": "0.00",
+          "applied": []
+        }
+      ],
+      "notes": [
+        "W-23 «Упаковка»: в выгрузке принята 11.11.2026 - уже после даты отчёта, поэтому на 10.11.2026 работа ещё не принята и не отменена.",
+        "P-8 (20 000,00, «Остаток»): заведён 12.11.2026, оплачен 12.11.2026 - после даты отчёта, не учтён."
+      ]
+    }
+  ],
+  "skipped": [],
+  "data_warnings": []
+}
