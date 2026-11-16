@@ -1,0 +1,3 @@
+# Выгрузка и отчёты для Excel хранятся байт в байт (CRLF как в оригинале)
+data/*.csv -text
+examples/*.csv -text
